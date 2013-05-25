@@ -1,0 +1,55 @@
+A collaborators (3)
+B informations (3)
+C tasks (10)
+D task_group (7)
+E users (4)
+F collaborators_group (3)
+
+A
+id int
+owner_id int (opt)
+email varchar 255
+verif enum
+
+B
+id int
+title varchar 255
+description text
+
+C
+id int
+task_group_id int
+cat enum
+title varchar 255
+owner_id int
+description text
+start_date date
+end_date date
+status enum
+tasker_id int
+
+D
+id int
+title varchar 255
+cat enum
+owner_id int
+star_date date
+end_date date
+status enum
+
+E
+id int
+email varchar 255
+login varchar 15
+password varchar 64
+
+F
+id int
+collaborator_id
+task_group_id int
+
+
+collaborators.id -> tasks.tasker_id, collaborators_group.id
+users.id -> tasks.owner_id,task_group.owner_id, (opt) collaborators.user_id
+task_group.id -> tasks.task_group_id, collaborators.task_group_id,
+collaborators_group.tak_group_id

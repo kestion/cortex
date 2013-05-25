@@ -1,0 +1,50 @@
+<p>Catégorie</p>
+
+<ul>
+	<li><a href="index.php?page=sous_cat">SousCat1</a></li>
+	<li><a href="index.php?page=sous_cat">SousCat2</a></li>
+	<li><a href="index.php?page=sous_cat">SousCat3</a></li>
+	<li><a href="index.php?page=sous_cat">SousCat4</a></li>
+	<li><a href="index.php?page=sous_cat">SousCat5</a></li>
+	<li><a href="index.php?page=sous_cat">SousCat6</a></li>
+</ul>
+
+<form>
+	<fieldset>
+		<legend>Create a task</legend>
+		
+		<label for="title">Title</label>
+		<input type="text" placeholder="title" name="title" /><br /><br />
+		
+		<label for="date">Date</label>
+		<input type="date" name="date" />
+		<input type="hidden" name="startDate" /><br /><br />
+		
+		<label for="description">Description</label>
+		<textarea>I'm have to...</textarea><br /><br />
+		
+		<label for="tasker">Who is doing the task?</label>
+		<input type="text" placeholder="owner" name="tasker" />
+		<input type="hidden" name="owner" /><br /><br />
+		
+		<label for="placement">Where am I?</label>
+		<select>
+			<option name="placement">SousCat1</option>
+			<option name="placement">SousCat2</option>
+			<option name="placement">SousCat3</option>
+			<option name="placement">SousCat4</option>
+			<option name="placement">SousCat5</option>
+			<option name="placement">SousCat6</option>
+		</select><br /><br />
+			
+		<label for="status">Status</label>
+		<select>
+			<option name="status">To do</option>
+			<option name="status">In process</option>
+			<option name="status">Done</option>
+		</select><br /><br />		
+				
+		<input type="submit" value="create task" />
+				
+	</fieldset>
+</form>
